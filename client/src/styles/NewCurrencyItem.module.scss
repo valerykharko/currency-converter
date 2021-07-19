@@ -1,0 +1,25 @@
+.block {
+  width: auto;
+  padding: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba(26, 78, 153, 144);
+    color: white;
+  }
+
+  .item {
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  .description {
+    font-size: 16px;
+    margin: 0 0 2px 6px;
+    text-transform: lowercase;
+  }
+}

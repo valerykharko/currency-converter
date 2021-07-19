@@ -1,0 +1,51 @@
+$first_color: #14509c;
+$second_color: coral;
+
+.block {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 30px 10px 10px 20px;
+
+  .button {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    width: auto;
+    background: #ebf6fb;
+
+    &:hover {
+      .text {
+        cursor: pointer;
+        color: $second_color;
+      }
+      .plus {
+        background: linear-gradient($second_color, $second_color),
+          linear-gradient($second_color, $second_color), rgba(0, 0, 0, 0);
+        background-position: center;
+        background-size: 65% 1px, 1px 65%;
+        background-repeat: no-repeat;
+        border: 1px solid $second_color;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .plus {
+    width: 20px;
+    height: 20px;
+    background: linear-gradient($first_color, $first_color),
+      linear-gradient($first_color, $first_color), rgba(0, 0, 0, 0);
+    background-position: center;
+    background-size: 65% 1px, 1px 65%;
+    background-repeat: no-repeat;
+    border: 1px solid $first_color;
+    border-radius: 50%;
+  }
+
+  .text {
+    font-size: 18px;
+    color: $first_color;
+    margin-left: 10px;
+  }
+}

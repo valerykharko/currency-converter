@@ -1,0 +1,21 @@
+.modal {
+  width: 360px;
+  height: 172px;
+  background-color: white;
+  position: relative;
+  bottom: 210px;
+  left: 15px;
+  margin-bottom: -160px;
+  transform: scale(0);
+}
+
+.modal.active {
+  transform: scale(1);
+}
+
+.modal__content {
+  background-color: white;
+  width: 360px;
+  height: 172px;
+  overflow-y: scroll;
+}
